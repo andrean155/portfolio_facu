@@ -1,0 +1,177 @@
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+                         
+                     
+                         .class="navbar navbar-fixed-top navbar-dark bg-primary" {
+                           height: auto;
+                           border-top: 0;
+                           box-shadow: none;
+                           max-height: none;
+                           padding-left:0;
+                           padding-right:0;
+                         }
+                         .navbar-collapse.collapse {
+                           display: block ;
+                           width: auto ;
+                           padding-bottom: 0;
+                           overflow: visible ;
+                         }
+                         .navbar-collapse.in {
+                           overflow-x: visible;
+                         }
+                       .navbar-fixed-top {
+                       	left: auto ;
+
+                       }
+                       .navbar
+                       {
+                       	max-width:1599px;
+                       	margin-right: 0;
+                       	margin-left: 0;
+                       }	
+                       
+                       .navbar-nav,
+                       .navbar-nav > li,
+                       .navbar-left,
+                       .navbar-right,
+                       .navbar-header
+                       {float:none;}
+
+  
+  body {
+      position: relative; 
+  }
+  #primeiro {background-image:url(../imagem_home_bg.jpg);}
+  #segundo {color: #fff; background-image:url(../imagens_programas_bg.jpg);}
+  #terceiro {color: #fff; background-image: url(../imagem_jobs_bg.jpg);}
+  #quarto {color: #fff; background-image: url(../imagens_contato_bg.jpg) ;}
+
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-fixed-top navbar-dark bg-primary"></nav>
+<div id="primeiro" class="container-fluid">
+  <div class="col-lg-6 col-lg-offset-2" >
+  <h1>  O que SOU!</h1>
+  <p>Não sou mais um Diretor de Arte hispster descolado cheio de fotos cults no Instagram. Não sou uma empresa ou uma organização governamental. Original, criativo e inovador, tenho orgulho do meu trabalho.</p>
+  </div>
+ 
+</div>
+<div id="segundo" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 portfolio-item">
+    <a href="#portfolioModal1"  data-toggle="modal"><img src="../imagem_banner/prgramas/ps.png" class="img-responsive" alt="empty"><a href="#portfolio"  data-toggle="modal"><img src="../imagem_banner/prgramas/fla.png" class="img-responsive" alt="empty"></a><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"><img src="../imagem_banner/prgramas/ai.png" class="img-responsive"  alt="empty"></a></div>
+  </div>
+  <div class="col-sm-4 portfolio-item"></div>
+</div>
+<div id="terceiro" class="container-fluid">
+  <div class="container">
+   <h1>Portfólio</h1>
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+    <div class="row">
+      <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <p><img src="../imagem_banner/thumb_1.png" class="img-responsive" alt="empty"><a href="#portfolio" class="portfolio-link" data-toggle="modal"><img src="../imagem_banner/thumb_2.png" class="img-responsive" alt="empty">                        
+                        <p><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"><img src="../imagem_banner/thumb_3.png" class="img-responsive"  alt="empty"><a href="#portfolioModal4" class="portfolio-link" data-toggle="modal"><img src="../imagem_banner/thumb_4.png" class="img-responsive" alt="empty"></a><a href="#portfolioModal5" class="portfolio-link" data-toggle="modal"></a><a href="#portfolioModal6" class="portfolio-link" data-toggle="modal"><img src="../imagem_banner/thumb_6.png" class="img-responsive" alt="empty"></a><a href="#portfolioModal5" class="portfolio-link" data-toggle="modal"><img src="../imagem_banner/thumb_5.png" class="img-responsive" alt="empty"></a>
+                          
+        </div>
+            </div>
+    <div class="col-sm-4 portfolio-item">
+      <a href="#portfolio" class="portfolio-link" data-toggle="modal">
+      <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+          </div>
+        </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                  </a>
+    </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                              
+                            </div>
+                        </div>
+                    </a>
+                </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<div id="quarto" class="container-fluid">
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contato</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Nome</label>
+                              <input type="text" class="form-control" placeholder="Nome*" id="nome" required data-validation-required-message="por favor diga seu nome.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Email*" id="email" required data-validation-required-message="por favor coloque seu email">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Telefone</label>
+                                <input type="tel" class="form-control" placeholder="Telefone*" id="phone" required data-validation-required-message="por favor, coloque seu telefone*">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Mensagem</label>
+                                <textarea rows="5" class="form-control" placeholder="Mensagem*" id="message" required data-validation-required-message="Por favor, adicione um texto"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                      </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+</div>
+
+</body>
+</html>
